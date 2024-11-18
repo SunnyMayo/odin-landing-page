@@ -2,6 +2,10 @@ body {
     font-family: 'Roboto', 'Times New Roman', sans-serif;
     display: flex;
     flex-direction: column;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 .page-top {
@@ -14,7 +18,10 @@ header {
     flex-direction: row;
     justify-content: space-between;
     margin: 0 10%;
+    align-items: center;
+    height: 60px;
 }
+
 
 .head-logo {
     font-size: 24px;
@@ -36,10 +43,16 @@ li {
     color: #b4b4b4;
 }
 
+a {
+    text-decoration: none;
+    color: #b4b4b4;
+}
+
 .headline {
     display: flex;
     margin: 10%;
     gap: 40px;
+    height: 350px;
 }
 
 .headtext {
@@ -48,78 +61,6 @@ li {
     flex-direction: column;
     align-items: flex-start;
     justify-content: space-around;
-}
-
-.headimg {
-    flex: 1;
-    width: 400px;
-}
-
-.info {
-    display: flex;
-    flex-direction: column;
-}
-
-.info-head {
-    text-align: center;
-    font-size: 36px;
-    color: #1f2937;
-    font-weight: 900;
-    padding: 30px;
-
-}
-
-.info-boxes {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    align-items: center;
-}
-
-.info-box {
-    padding: 20px;
-    font-size: 18px;
-    font-weight: 500;
-    color: #63678a;
-}
-
-img {
-    width: 150px;
-    height: auto;
-    border-width: 3px;
-    border-radius: 10px;
-}
-
-.page-top,
-footer {
-    background-color: #1f2937;
-    color: #f9faf8;
-    width: 100%;
-}
-
-.quotes {
-    background-color: #E5E7EB;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 50px;
-    width: 100%;
-}
-
-.quote {
-    font-size: 36px;
-    font-weight: 200;
-    font-style: italic;
-    align-self: flex-start;
-    width: 70%;
-}
-
-.person {
-    font-weight: bold;
-    font-size: 28px;
-    width: 70%;
-    align-self: flex-end;
 }
 
 .hero {
@@ -133,13 +74,121 @@ footer {
     color: #f9faf8;
 }
 
-.signup,
-.action {
-    background-color: #3882f6;
+.headimg {
+    flex: 1;
+    width: 400px;
+}
+
+#info {
+    display: flex;
+    flex-direction: column;
+    background-color: #f9faf8;
+    justify-content: space-evenly;
+    width: 100%;
+    height: 400px;
+}
+
+.info-head {
+    text-align: center;
+    font-size: 36px;
+    color: #1f2937;
+    font-weight: 900;
+    padding: 30px;
+}
+
+.info-boxes {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 40px;
+    padding: 0 17%;
+}
+
+.info-box {
+    padding: 20px;
+    font-size: 18px;
+    font-weight: 500;
+    color: #63678a;
+    text-align: center;
+}
+
+img {
+    width: 120px;
+    height: auto;
+    border-width: 3px;
+    border-radius: 10px;
+}
+
+.page-top,
+footer {
+    background-color: #1f2937;
     color: #f9faf8;
+    width: 100%;
+}
+
+#quotes {
+    background-color: #E5E7EB;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 350px;
+    width: 100%;
+}
+
+.quote {
+    font-size: 36px;
+    font-weight: 200;
+    font-style: italic;
+    width: 60%;
+    align-self: center;
+}
+
+.person {
+    font-weight: bold;
+    font-size: 28px;
+    width: 50%;
+    text-align: end;
+}
+
+#action {
+    color: #f9faf8;
+    border-radius: 10px;
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    background-color: #3882f6;
+    padding: 40px;
+    margin: 100px;
+}
+
+.call {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.loud {
+    font-weight: bolder;
+    font-size: 20px;
+}
+
+.quiet{
+    font-weight: lighter;
+    font-size: 14px;
+}
+
+#action button {
+    border-width: 1px;
+    border-style: solid;
+    border-color: #f9faf8;
 }
 
 .signup {
+    background-color: #3882f6;
+    color: #f9faf8;
     font-weight: 600;
     padding: 6px 28px;
     border-style: solid;
@@ -147,4 +196,9 @@ footer {
     border-width: 1px;
     border-radius: 10px;
     font-size: 20px;
+}
+
+footer {
+    text-align: center;
+    padding: 20px 0;
 }
